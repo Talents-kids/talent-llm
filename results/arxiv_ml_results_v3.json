@@ -1,0 +1,778 @@
+{
+  "experiment_info": {
+    "version": "v3_all_analyses",
+    "date": "2025-11-27T20:35:27.515153",
+    "n_analyses_total": 5173,
+    "n_analyses_train": 3947,
+    "n_analyses_val": 544,
+    "n_analyses_test": 682,
+    "n_children_train": 352,
+    "n_children_test": 60,
+    "n_features_per_analysis": 458,
+    "n_features_child_level": 1071,
+    "n_category_scores": 306,
+    "n_key_talents": 144,
+    "analysis_types": {
+      "musical": 912,
+      "text": 2628,
+      "image": 1562,
+      "audio": 48,
+      "pdf": 5,
+      "video": 5,
+      "json": 11,
+      "docx": 2
+    },
+    "bins": [
+      "academic",
+      "sport",
+      "art",
+      "leadership",
+      "service",
+      "technology",
+      "others"
+    ]
+  },
+  "models": {
+    "LogReg (PA)": {
+      "roc_auc_macro": 0.9955914856923179,
+      "f1_macro": 0.9733865365808684,
+      "f1_micro": 0.987540192926045,
+      "ece": 0.003929915366560809,
+      "per_bin": {
+        "academic": {
+          "auc": 0.9988717836736178,
+          "precision": 0.9968454258675079,
+          "recall": 0.9890453834115805,
+          "f1": 0.992930086410055,
+          "support": 639
+        },
+        "sport": {
+          "auc": 0.9995904660496354,
+          "precision": 0.9811320754716981,
+          "recall": 0.9961685823754789,
+          "f1": 0.9885931558935361,
+          "support": 261
+        },
+        "art": {
+          "auc": 0.9934030626196336,
+          "precision": 0.9984177215189873,
+          "recall": 0.9921383647798742,
+          "f1": 0.9952681388012619,
+          "support": 636
+        },
+        "leadership": {
+          "auc": 0.9790597512890507,
+          "precision": 0.9386503067484663,
+          "recall": 0.9745222929936306,
+          "f1": 0.95625,
+          "support": 157
+        },
+        "service": {
+          "auc": 0.9988662430458513,
+          "precision": 0.9697986577181208,
+          "recall": 0.993127147766323,
+          "f1": 0.9813242784380306,
+          "support": 291
+        },
+        "technology": {
+          "auc": 1.0,
+          "precision": 0.8333333333333334,
+          "recall": 1.0,
+          "f1": 0.9090909090909091,
+          "support": 35
+        },
+        "others": {
+          "auc": 0.9993490931684369,
+          "precision": 0.9934782608695653,
+          "recall": 0.9870410367170627,
+          "f1": 0.9902491874322861,
+          "support": 463
+        }
+      }
+    },
+    "LightGBM (PA)": {
+      "roc_auc_macro": 0.9999272308249928,
+      "f1_macro": 0.9972177261515937,
+      "f1_micro": 0.9979846835953244,
+      "ece": 0.001805342664074303,
+      "per_bin": {
+        "academic": {
+          "auc": 0.9999272118499108,
+          "precision": 0.9984375,
+          "recall": 1.0,
+          "f1": 0.9992181391712275,
+          "support": 639
+        },
+        "sport": {
+          "auc": 0.9999817984910949,
+          "precision": 1.0,
+          "recall": 0.9961685823754789,
+          "f1": 0.9980806142034548,
+          "support": 261
+        },
+        "art": {
+          "auc": 0.9999316379546076,
+          "precision": 0.9984301412872841,
+          "recall": 1.0,
+          "f1": 0.9992144540455616,
+          "support": 636
+        },
+        "leadership": {
+          "auc": 0.9998422808613892,
+          "precision": 0.9872611464968153,
+          "recall": 0.9872611464968153,
+          "f1": 0.9872611464968153,
+          "support": 157
+        },
+        "service": {
+          "auc": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 291
+        },
+        "technology": {
+          "auc": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 35
+        },
+        "others": {
+          "auc": 0.9998076866179473,
+          "precision": 1.0,
+          "recall": 0.9935205183585313,
+          "f1": 0.9967497291440953,
+          "support": 463
+        }
+      }
+    },
+    "LightGBM Cal (PA)": {
+      "roc_auc_macro": 0.9995662846874962,
+      "f1_macro": 0.9920405016761854,
+      "f1_micro": 0.9967715899919289,
+      "ece": 0.0030865192971262535,
+      "per_bin": {
+        "academic": {
+          "auc": 0.9998544236998217,
+          "precision": 0.996875,
+          "recall": 0.9984350547730829,
+          "f1": 0.9976544175136826,
+          "support": 639
+        },
+        "sport": {
+          "auc": 0.9978795242125571,
+          "precision": 1.0,
+          "recall": 0.9923371647509579,
+          "f1": 0.9961538461538462,
+          "support": 261
+        },
+        "art": {
+          "auc": 0.9999658189773037,
+          "precision": 0.9984301412872841,
+          "recall": 1.0,
+          "f1": 0.9992144540455616,
+          "support": 636
+        },
+        "leadership": {
+          "auc": 0.9994661813770094,
+          "precision": 0.9935064935064936,
+          "recall": 0.9745222929936306,
+          "f1": 0.9839228295819936,
+          "support": 157
+        },
+        "service": {
+          "auc": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 291
+        },
+        "technology": {
+          "auc": 0.9999558401413116,
+          "precision": 1.0,
+          "recall": 0.9428571428571428,
+          "f1": 0.9705882352941176,
+          "support": 35
+        },
+        "others": {
+          "auc": 0.9998422044044696,
+          "precision": 1.0,
+          "recall": 0.9935205183585313,
+          "f1": 0.9967497291440953,
+          "support": 463
+        }
+      }
+    },
+    "LogReg (Child)": {
+      "roc_auc_macro": 0.9948275211861584,
+      "f1_macro": 0.9749975704568954,
+      "f1_micro": 0.9779874213836478,
+      "ece": 0.01688989130839008,
+      "per_bin": {
+        "academic": {
+          "auc": 1.0,
+          "precision": 0.9824561403508771,
+          "recall": 1.0,
+          "f1": 0.9911504424778761,
+          "support": 56
+        },
+        "sport": {
+          "auc": 0.982638888888889,
+          "precision": 0.9583333333333334,
+          "recall": 0.9583333333333334,
+          "f1": 0.9583333333333334,
+          "support": 48
+        },
+        "art": {
+          "auc": 0.9941520467836258,
+          "precision": 1.0,
+          "recall": 0.9473684210526315,
+          "f1": 0.972972972972973,
+          "support": 57
+        },
+        "leadership": {
+          "auc": 0.9987499999999999,
+          "precision": 0.975609756097561,
+          "recall": 1.0,
+          "f1": 0.9876543209876543,
+          "support": 40
+        },
+        "service": {
+          "auc": 0.9984472049689441,
+          "precision": 1.0,
+          "recall": 0.9782608695652174,
+          "f1": 0.989010989010989,
+          "support": 46
+        },
+        "technology": {
+          "auc": 0.9953703703703703,
+          "precision": 0.9565217391304348,
+          "recall": 0.9166666666666666,
+          "f1": 0.9361702127659575,
+          "support": 24
+        },
+        "others": {
+          "auc": 0.9944341372912802,
+          "precision": 1.0,
+          "recall": 0.9795918367346939,
+          "f1": 0.9896907216494846,
+          "support": 49
+        }
+      }
+    },
+    "LightGBM (Child)": {
+      "roc_auc_macro": 0.9910810637856999,
+      "f1_macro": 0.9838484458841774,
+      "f1_micro": 0.9842767295597484,
+      "ece": 0.021618827268689113,
+      "per_bin": {
+        "academic": {
+          "auc": 0.9642857142857143,
+          "precision": 0.9821428571428571,
+          "recall": 0.9821428571428571,
+          "f1": 0.9821428571428571,
+          "support": 56
+        },
+        "sport": {
+          "auc": 0.9947916666666666,
+          "precision": 0.9791666666666666,
+          "recall": 0.9791666666666666,
+          "f1": 0.9791666666666666,
+          "support": 48
+        },
+        "art": {
+          "auc": 1.0,
+          "precision": 1.0,
+          "recall": 0.9824561403508771,
+          "f1": 0.9911504424778761,
+          "support": 57
+        },
+        "leadership": {
+          "auc": 0.99,
+          "precision": 1.0,
+          "recall": 0.975,
+          "f1": 0.9873417721518988,
+          "support": 40
+        },
+        "service": {
+          "auc": 0.9984472049689441,
+          "precision": 0.9787234042553191,
+          "recall": 1.0,
+          "f1": 0.989247311827957,
+          "support": 46
+        },
+        "technology": {
+          "auc": 0.9918981481481481,
+          "precision": 1.0,
+          "recall": 0.9583333333333334,
+          "f1": 0.9787234042553191,
+          "support": 24
+        },
+        "others": {
+          "auc": 0.9981447124304267,
+          "precision": 1.0,
+          "recall": 0.9591836734693877,
+          "f1": 0.9791666666666666,
+          "support": 49
+        }
+      }
+    },
+    "RandomForest (Child)": {
+      "roc_auc_macro": 0.9931821433479596,
+      "f1_macro": 0.97491512830642,
+      "f1_micro": 0.9797191887675507,
+      "ece": 0.050020679792931205,
+      "per_bin": {
+        "academic": {
+          "auc": 0.9866071428571428,
+          "precision": 0.9655172413793104,
+          "recall": 1.0,
+          "f1": 0.9824561403508771,
+          "support": 56
+        },
+        "sport": {
+          "auc": 0.9982638888888888,
+          "precision": 0.9791666666666666,
+          "recall": 0.9791666666666666,
+          "f1": 0.9791666666666666,
+          "support": 48
+        },
+        "art": {
+          "auc": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 57
+        },
+        "leadership": {
+          "auc": 0.99125,
+          "precision": 0.9069767441860465,
+          "recall": 0.975,
+          "f1": 0.9397590361445783,
+          "support": 40
+        },
+        "service": {
+          "auc": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 46
+        },
+        "technology": {
+          "auc": 0.9780092592592593,
+          "precision": 1.0,
+          "recall": 0.875,
+          "f1": 0.9333333333333333,
+          "support": 24
+        },
+        "others": {
+          "auc": 0.9981447124304267,
+          "precision": 1.0,
+          "recall": 0.9795918367346939,
+          "f1": 0.9896907216494846,
+          "support": 49
+        }
+      }
+    },
+    "LightGBM Cal (Child)": {
+      "roc_auc_macro": 0.9826913265306123,
+      "f1_macro": 0.9791616416135882,
+      "f1_micro": 0.9826771653543307,
+      "ece": 0.03974957892250964,
+      "per_bin": {
+        "academic": {
+          "auc": 0.9732142857142857,
+          "precision": 0.9655172413793104,
+          "recall": 1.0,
+          "f1": 0.9824561403508771,
+          "support": 56
+        },
+        "sport": {
+          "auc": 0.9947916666666666,
+          "precision": 0.9791666666666666,
+          "recall": 0.9791666666666666,
+          "f1": 0.9791666666666666,
+          "support": 48
+        },
+        "art": {
+          "auc": 1.0,
+          "precision": 1.0,
+          "recall": 0.9649122807017544,
+          "f1": 0.9821428571428571,
+          "support": 57
+        },
+        "leadership": {
+          "auc": 0.98375,
+          "precision": 1.0,
+          "recall": 0.975,
+          "f1": 0.9873417721518988,
+          "support": 40
+        },
+        "service": {
+          "auc": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 46
+        },
+        "technology": {
+          "auc": 0.9270833333333333,
+          "precision": 1.0,
+          "recall": 0.875,
+          "f1": 0.9333333333333333,
+          "support": 24
+        },
+        "others": {
+          "auc": 1.0,
+          "precision": 1.0,
+          "recall": 0.9795918367346939,
+          "f1": 0.9896907216494846,
+          "support": 49
+        }
+      }
+    }
+  },
+  "shap_top_features": {
+    "academic": [
+      [
+        "gardner.verbal_linguistic",
+        1.281698705329445
+      ],
+      [
+        "intellectual.analytical.critical_thinking",
+        0.9204607057271292
+      ],
+      [
+        "intellectual",
+        0.8830640318815861
+      ],
+      [
+        "intellectual.scientific.systematic",
+        0.763578207623165
+      ],
+      [
+        "intellectual.informational.processing",
+        0.739019903086858
+      ]
+    ],
+    "sport": [
+      [
+        "physical.manual_skills.fine_motor",
+        3.9361739447015855
+      ],
+      [
+        "atype_text",
+        3.5161482916317546
+      ],
+      [
+        "gardner.bodily_kinesthetic",
+        2.0228104662605597
+      ],
+      [
+        "physical",
+        1.5620892406696976
+      ],
+      [
+        "physical.manual_skills.dexterity",
+        0.4361734936663666
+      ]
+    ],
+    "art": [
+      [
+        "creative.artistic_expression.literary",
+        1.7799917503162082
+      ],
+      [
+        "creative.creative_thinking.idea_generation",
+        1.5469450986822908
+      ],
+      [
+        "gardner.spatial_visual",
+        1.0443732972732152
+      ],
+      [
+        "creative.artistic_expression.visual",
+        0.7338956282657514
+      ],
+      [
+        "creative.artistic_expression.music",
+        0.605576538804532
+      ]
+    ],
+    "leadership": [
+      [
+        "gardner.interpersonal",
+        4.976974218176853
+      ],
+      [
+        "practical.organizational.planning",
+        0.5892146181912703
+      ],
+      [
+        "talent_creative.creative_thinking.idea_generation",
+        0.17352706313330832
+      ],
+      [
+        "intellectual.informational.learning_ability",
+        0.1503626161074355
+      ],
+      [
+        "intellectual.analytical.logic",
+        0.14135437378066368
+      ]
+    ],
+    "service": [
+      [
+        "social.empathy.emotion_understanding",
+        9.78870375549741
+      ],
+      [
+        "gardner.verbal_linguistic",
+        0.5169865087850488
+      ],
+      [
+        "social.empathy.social_awareness",
+        0.12704858071380026
+      ],
+      [
+        "creative.creative_thinking.design",
+        0.061243312965202336
+      ],
+      [
+        "social.empathy.relationship_management",
+        0.033966509765141525
+      ]
+    ],
+    "technology": [
+      [
+        "practical.technical.engineering",
+        1.101152864529285
+      ],
+      [
+        "practical.technical.programming",
+        0.49816631812307643
+      ],
+      [
+        "gardner.intrapersonal",
+        0.1840099897760387
+      ],
+      [
+        "gardner.bodily_kinesthetic",
+        0.13920759416975867
+      ],
+      [
+        "talent_intellectual.scientific.systematic",
+        0.1377081717329798
+      ]
+    ],
+    "others": [
+      [
+        "social.communication.verbal",
+        4.903917398587087
+      ],
+      [
+        "gardner.naturalistic",
+        1.766505439299669
+      ],
+      [
+        "social.communication.presentation",
+        0.6340555939774732
+      ],
+      [
+        "gardner.intrapersonal",
+        0.62222909792665
+      ],
+      [
+        "intellectual.analytical.critical_thinking",
+        0.2893104610805577
+      ]
+    ]
+  },
+  "temporal": {
+    "temporal_dataset": {
+      "n_children_train": 279,
+      "n_children_test": 70,
+      "total_s1_analyses": 2505,
+      "total_s2_analyses": 2552
+    },
+    "temporal_models": {
+      "LogReg (Temporal)": {
+        "roc_auc_macro": NaN,
+        "f1_macro": 0.8278618001691654,
+        "f1_micro": 0.8855721393034826,
+        "ece": 0.09083390281526363,
+        "per_bin": {
+          "academic": {
+            "auc": 0.9705882352941178,
+            "precision": 0.9714285714285714,
+            "recall": 1.0,
+            "f1": 0.9855072463768116,
+            "support": 68
+          },
+          "sport": {
+            "auc": 0.7395993836671803,
+            "precision": 0.8727272727272727,
+            "recall": 0.8135593220338984,
+            "f1": 0.8421052631578947,
+            "support": 59
+          },
+          "art": {
+            "auc": 0.9855072463768116,
+            "precision": 0.9857142857142858,
+            "recall": 1.0,
+            "f1": 0.9928057553956835,
+            "support": 69
+          },
+          "leadership": {
+            "auc": 0.6399572649572649,
+            "precision": 0.7755102040816326,
+            "recall": 0.7307692307692307,
+            "f1": 0.7524752475247525,
+            "support": 52
+          },
+          "service": {
+            "auc": 0.8606965174129354,
+            "precision": 0.9655172413793104,
+            "recall": 0.835820895522388,
+            "f1": 0.896,
+            "support": 67
+          },
+          "technology": {
+            "auc": 0.44272445820433437,
+            "precision": 0.27586206896551724,
+            "recall": 0.42105263157894735,
+            "f1": 0.3333333333333333,
+            "support": 19
+          },
+          "others": {
+            "auc": NaN,
+            "precision": 1.0,
+            "recall": 0.9857142857142858,
+            "f1": 0.9928057553956835,
+            "support": 70
+          }
+        }
+      },
+      "LightGBM (Temporal)": {
+        "roc_auc_macro": NaN,
+        "f1_macro": 0.8333107426032383,
+        "f1_micro": 0.9230769230769231,
+        "ece": 0.06933491839973328,
+        "per_bin": {
+          "academic": {
+            "auc": 0.838235294117647,
+            "precision": 0.9714285714285714,
+            "recall": 1.0,
+            "f1": 0.9855072463768116,
+            "support": 68
+          },
+          "sport": {
+            "auc": 0.7164869029275809,
+            "precision": 0.8615384615384616,
+            "recall": 0.9491525423728814,
+            "f1": 0.9032258064516129,
+            "support": 59
+          },
+          "art": {
+            "auc": 0.8405797101449275,
+            "precision": 0.9857142857142858,
+            "recall": 1.0,
+            "f1": 0.9928057553956835,
+            "support": 69
+          },
+          "leadership": {
+            "auc": 0.6591880341880342,
+            "precision": 0.7903225806451613,
+            "recall": 0.9423076923076923,
+            "f1": 0.8596491228070176,
+            "support": 52
+          },
+          "service": {
+            "auc": 0.8706467661691542,
+            "precision": 0.9701492537313433,
+            "recall": 0.9701492537313433,
+            "f1": 0.9701492537313433,
+            "support": 67
+          },
+          "technology": {
+            "auc": 0.4613003095975233,
+            "precision": 0.16666666666666666,
+            "recall": 0.10526315789473684,
+            "f1": 0.12903225806451613,
+            "support": 19
+          },
+          "others": {
+            "auc": NaN,
+            "precision": 1.0,
+            "recall": 0.9857142857142858,
+            "f1": 0.9928057553956835,
+            "support": 70
+          }
+        }
+      },
+      "RandomForest (Temporal)": {
+        "roc_auc_macro": NaN,
+        "f1_macro": 0.8211694861749778,
+        "f1_micro": 0.9372693726937269,
+        "ece": 0.04491143957895305,
+        "per_bin": {
+          "academic": {
+            "auc": 0.9779411764705883,
+            "precision": 0.9714285714285714,
+            "recall": 1.0,
+            "f1": 0.9855072463768116,
+            "support": 68
+          },
+          "sport": {
+            "auc": 0.6795069337442219,
+            "precision": 0.8656716417910447,
+            "recall": 0.9830508474576272,
+            "f1": 0.9206349206349206,
+            "support": 59
+          },
+          "art": {
+            "auc": 0.9855072463768116,
+            "precision": 0.9857142857142858,
+            "recall": 1.0,
+            "f1": 0.9928057553956835,
+            "support": 69
+          },
+          "leadership": {
+            "auc": 0.6645299145299146,
+            "precision": 0.7846153846153846,
+            "recall": 0.9807692307692307,
+            "f1": 0.8717948717948718,
+            "support": 52
+          },
+          "service": {
+            "auc": 0.8905472636815921,
+            "precision": 0.9848484848484849,
+            "recall": 0.9701492537313433,
+            "f1": 0.9774436090225563,
+            "support": 67
+          },
+          "technology": {
+            "auc": 0.544891640866873,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 19
+          },
+          "others": {
+            "auc": NaN,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 70
+          }
+        }
+      }
+    },
+    "interpretation": {
+      "purpose": "Predict child's future talent profile (S2) from earlier assessments (S1)",
+      "findings": "Best temporal model: LightGBM (Temporal)",
+      "predictive_validity": "F1-macro=0.8333 shows moderate predictive validity"
+    }
+  }
+}
