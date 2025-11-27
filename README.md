@@ -1,5 +1,7 @@
 # TALENT LLM: Multi-Label Talent Prediction Dataset
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17743456.svg)](https://doi.org/10.5281/zenodo.17743456)
+
 This repository contains the dataset and code for the paper:
 
 **"TALENT LLM: Multi-Label Talent Prediction in Children Using Fine-Tuned Large Language Models with Calibrated Baselines"**
@@ -101,7 +103,9 @@ See `results/arxiv_ml_results_v3.json` for complete experimental results.
 @article{sergeev2025talent,
   title={TALENT LLM: Multi-Label Talent Prediction in Children Using Fine-Tuned Large Language Models with Calibrated Baselines},
   author={Sergeev, Dmitriy},
-  year={2025}
+  year={2025},
+  doi={10.5281/zenodo.17743456},
+  url={https://doi.org/10.5281/zenodo.17743456}
 }
 ```
 
